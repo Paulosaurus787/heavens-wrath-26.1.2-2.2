@@ -1,0 +1,54 @@
+Heaven's Wrath fuer Minecraft 26.1.2 (Fabric, nur Client)
+
+=== So bekommst du die .jar ===
+1. Kostenloses Konto auf github.com, dann "New repository" (z. B. "heavens-wrath-26.1.2").
+2. ZIP entpacken und ALLE Dateien/Ordner hochladen (Add file > Upload files),
+   auch den versteckten Ordner ".github" (sonst startet der Build nicht).
+3. Reiter "Actions" oeffnen, den Lauf "Build" abwarten (ca. 3 Minuten).
+4. Auf den Lauf klicken, unten bei "Artifacts" "heavens-wrath-26.1.2-jar" herunterladen.
+5. In der ZIP liegt die .jar -> im NoRisk Client zum Profil hinzufuegen.
+   Das Profil braucht Fabric + Fabric API fuer 26.1.2 (Java 25).
+
+=== Menue oeffnen ===
+Taste K (in den Tasteneinstellungen unter "Heaven's Wrath" aenderbar) oder /killeffect.
+Es oeffnet sich ein eigenes Fenster (komplett auf Englisch) mit 3 Reitern: Effects, Items,
+Sounds. Oben waehlst du eines von 5 Profilen. Jedes Profil merkt sich Effekt, Item, Sound,
+Assist-Skin und Koerper-Einstellung. Unten: Effect ON/OFF, Body steht/loest auf,
+Assist skin (Knopf oeffnet ein eigenes kleines Fenster zum Eintippen eines Spielernamens
+oder Anklicken eines online Spielers - der Name funktioniert jetzt auch, wenn der Spieler
+gerade nicht auf dem Server ist, der Skin wird dann per Name nachgeladen), Done.
+
+=== Kill-Effekte (/killeffect, Reiter "Effects") ===
+Alle Effekte sind sofort nutzbar, es gibt keine Freischaltung mehr:
+    weapon      Deine Waffe kracht vom Himmel (Standard)
+    goat        Eine Ziege rammt ihn weg
+    llama       Ein Lama spuckt ihn weg
+    assist      Mace: Ein Fake-Spieler (Skin frei waehlbar) kommt aus dem Himmel und
+                schlaegt mit dem Mace zu. Schwert: Ein Fake-Spieler rennt heran und rammt
+                das Schwert durch ihn. (Mit anderen Waffen faellt die normale Waffe.)
+    warden      Sonic Boom schiesst ihn weg
+    golem       Eisengolem schleudert ihn zum Mond
+    lightning   Drei Blitze schlagen ein
+    meteor      Ein brennender Magmablock-Meteor schlaegt ein
+    angel       Eine Lichtsaeule traegt ihn hinauf
+    slime       Er verwandelt sich in einen Slime und huepft weg
+    tsundere    Er verschraenkt die Arme und schaut trotzig 90 Grad zur Seite
+
+=== Wind Burst Bonus-Effekt ===
+Toetest du jemanden mit einem Streitkolben (Mace), der mit "Wind Burst" verzaubert ist,
+gibt es zusaetzlich einen Windstoss am Einschlagsort, egal welcher Kill-Effekt gerade
+eingestellt ist. Je hoeher die Verzauberungsstufe (1 bis 3), desto staerker der Stoss.
+
+=== Chat-Befehle (gehen weiterhin, auf Englisch) ===
+/killeffect                      -> Fenster oeffnen
+/killeffect on | off
+/killeffect mode <name> | item <name> | body stand|dissolve
+/killeffect profile 1..5
+/killsound                       -> Fenster, Reiter Sounds (Klick spielt den Sound zur Probe)
+Sounds: wither (Standard), wither_death, thunder, lightning_impact, dragon, dragon_death,
+        anvil, warden, trident, combo (thunder + lightning + anvil + wither), off
+
+Alle Einstellungen werden gespeichert (config/heavens_wrath.properties).
+Es wird nichts ins Internet gesendet.
+
+Bei einem roten Fehler im Lauf: Fehlermeldung kopieren und mir schicken.
